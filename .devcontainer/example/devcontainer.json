@@ -1,0 +1,30 @@
+{
+  "name": "PreBuilt devcontainer",
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+      	"terrastruct.d2",
+				"hediet.vscode-drawio",
+				"GitHub.copilot",
+				"jock.svg"
+      ],
+      "settings": {
+        "editor.tabSize": 4,
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+          }
+        }
+      }
+    }
+  },
+  "features": {},
+  "initializeCommand": "bash .devcontainer/example/init.sh",
+  "postCreateCommand": "bash -i .devcontainer/example/post-create.sh",
+  "waitFor": "postCreateCommand",
+  "postStartCommand": "bash -i .devcontainer/example/post-start.sh",
+  "remoteUser": "root"
+}

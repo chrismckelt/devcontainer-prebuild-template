@@ -1,0 +1,19 @@
+{
+	"name": "RAW devcontainer",
+	"image": "mcr.microsoft.com/devcontainers/base:debian",
+	"features": {
+		"ghcr.io/devcontainers/features/rust:1": {},
+		"ghcr.io/ksh5022/devcontainer-features/d2:1": {},
+		"ghcr.io/devcontainers-extra/features/clojure-asdf:2": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"terrastruct.d2",
+				"hediet.vscode-drawio",
+				"GitHub.copilot",
+				"jock.svg"
+			]
+		}
+	}
+}
