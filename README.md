@@ -23,8 +23,7 @@ For future changes to work, there is a GitHub Action included to 'prebuild' the 
 - REGISTRY_TOKEN
 
 
-This branch was manually built and pushed locally to _docker.io/chrismckelt/devcontainer-prebuild-template
-_ by
+This branch was manually built and pushed locally to <https://hub.docker.com/repository/docker/chrismckelt/devcontainer-prebuild-template>
 
      devcontainer build --workspace-folder . --image-name chrismckelt/devcontainer-prebuild-template
      docker push chrismckelt/devcontainer-prebuild-template:latest
